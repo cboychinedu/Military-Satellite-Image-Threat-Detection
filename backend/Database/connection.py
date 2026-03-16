@@ -17,7 +17,7 @@ class DatabaseConnection:
     # Creating a method to connect to the database 
     def connect(self): 
         # Using try except block to connect to the database 
-        try: 
+        try:  
             # Making the connection to the postgresql database 
             self.conn = psycopg2.connect(
                 host=self.host, 
