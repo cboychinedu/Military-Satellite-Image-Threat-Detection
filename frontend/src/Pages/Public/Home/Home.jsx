@@ -38,7 +38,7 @@ const Home = () => {
                             </div>
                           
                             <h2 className="text-4xl md:text-[70px] md:leading-[70px] font-extrabold text-white tracking-tighter"> 
-                                Threat Detection Intelligence Anaysis
+                                Threat Detection Intelligence Analysis
                             </h2>
                         </div>
 
