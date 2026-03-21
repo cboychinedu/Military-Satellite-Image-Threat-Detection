@@ -8,6 +8,9 @@ import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
  * Pages route folder 
  */
 import Home from './Pages/Public/Home/Home';
+import Login from './Pages/Auth/Login/Login';
+import Register from './Pages/Auth/Register/Register';
+
 
 // Creating the App component 
 class App extends Component {
@@ -20,6 +23,8 @@ class App extends Component {
                     <Routes> 
                         {/* Adding the routes */}
                         <Route path="/" element={<Home /> } /> 
+                        <Route path="/login" element={<Login /> } /> 
+                        <Route path="/register" element={<Register /> } /> 
                     </Routes> 
                 </BrowserRouter>
             </Fragment>

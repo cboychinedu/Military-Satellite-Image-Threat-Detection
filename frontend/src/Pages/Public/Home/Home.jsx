@@ -1,6 +1,8 @@
 // Importing the necessary modules 
 import { Fragment } from "react";
 import steps from "@Components/Steps/Steps";
+import Navbar from "@Components/Navbar/Navbar";
+import Footer from "@Components/Footer/Footer";
 import dashboardPreview from "@Images/image.png"; 
 import darpaLogo from "@Images/darpa.jpeg"; 
 
@@ -11,22 +13,7 @@ const Home = () => {
         <Fragment> 
             <div className="min-h-screen"> 
                 {/* Navbar */}
-                <nav className="bg-mil-gray border-b border-mil-border sticky top-0 z-50">
-                    <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-                        <div className="flex items-center justity-center gap-3">
-                            <div className="flex w-full items-center justify-between"> 
-                                <span className="text-3xl">📡</span>
-                                <h1 className="text-2xl font-bold text-blue-200 mx-2">Military Satellite AI System</h1>
-                            </div>
-                        </div>
-                        <div> 
-                            <a className="text-sm text-blue-200 mr-2" href="#"> Login </a>
-                            <a className="text-sm text-blue-200 mr-2"> Register </a>
-                            <a className="text-sm text-blue-200 mr-2"> About </a>
-                            <a className="text-sm text-blue-200 mr-2"> Contact </a>
-                        </div>
-                    </nav>
-                </nav>
+                <Navbar /> 
 
                 {/* Main Content */}
                 <main className="max-w-7xl mx-auto px-6 py-12 md:py-20 space-y-10"> 
@@ -112,12 +99,7 @@ const Home = () => {
                 </main>
 
                 {/* Adding the footer  */}
-                <footer className="border-t border-mil-border bg-mil-gray mt-20">
-                    <div className="max-w-7xl mx-auto px-6 py-10 text-center text-gray-600 space-y-3">
-                    <p className="font-mono text-sm">SECURITY CLASSIFICATION: CONFIDENTIAL</p>
-                    <p>&copy; 2026 DEFENSE ADVANCED RESEARCH PROJECT AGENCY (<b> DARPA </b>) </p>
-                    </div>
-                </footer>
+                <Footer /> 
             </div>
         </Fragment>
     )
