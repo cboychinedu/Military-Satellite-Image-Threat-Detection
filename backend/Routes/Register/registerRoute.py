@@ -24,6 +24,7 @@ def registerPage():
     fullname = userData["fullname"]
     email = userData["email"]
     password = userData["password"]
+    clearanceCode = userData["clearanceCode"]
 
     # Creating an instance of the register database class 
     registerUserDb = RegisterDatabase(db)
