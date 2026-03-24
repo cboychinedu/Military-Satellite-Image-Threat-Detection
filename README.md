@@ -8,6 +8,17 @@ Below is a deeper explanation of how you can build it using **Python + ML + Reac
 
 ---
 
+# Installation 
+
+Add your env. 
+
+```bash
+SECRET_KEY=""
+DATABASE_PASSWORD=""
+DATABASE_NAME="satelliteAnalysis"
+ENCRYPTION_KEY=''
+```
+
 # 1. What the System Does
 
 The system takes a **satellite image** and automatically detects objects such as:
