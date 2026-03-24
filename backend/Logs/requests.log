@@ -60,3 +60,49 @@
 2026-03-24 17:04:50 - INFO - 127.0.0.1 - - [24/Mar/2026 17:04:50] "POST /register HTTP/1.1" 200 -
 2026-03-24 17:05:49 - INFO - Request: POST /register - IP: 127.0.0.1
 2026-03-24 17:05:49 - INFO - 127.0.0.1 - - [24/Mar/2026 17:05:49] "POST /register HTTP/1.1" 200 -
+2026-03-24 17:56:52 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3001
+ * Running on http://172.20.10.2:3001
+2026-03-24 17:56:52 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-24 17:56:52 - INFO -  * Restarting with stat
+2026-03-24 17:56:52 - WARNING -  * Debugger is active!
+2026-03-24 17:56:52 - INFO -  * Debugger PIN: 133-917-514
+2026-03-24 17:57:02 - INFO - Request: POST /register - IP: 127.0.0.1
+2026-03-24 17:57:03 - INFO - 127.0.0.1 - - [24/Mar/2026 17:57:03] "POST /register HTTP/1.1" 200 -
+2026-03-24 18:18:33 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3001
+ * Running on http://172.20.10.2:3001
+2026-03-24 18:18:33 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-24 18:18:33 - INFO -  * Restarting with stat
+2026-03-24 18:18:33 - WARNING -  * Debugger is active!
+2026-03-24 18:18:33 - INFO -  * Debugger PIN: 133-917-514
+2026-03-24 18:18:40 - INFO - Request: POST /register - IP: 127.0.0.1
+2026-03-24 18:18:40 - INFO - 127.0.0.1 - - [24/Mar/2026 18:18:40] "POST /register HTTP/1.1" 200 -
+2026-03-24 18:21:45 - INFO -  * Detected change in '/Users/mbonuchinedum/Documents/Projects/SatelliteImageThreatDetectionSystem/backend/Database/registerDb.py', reloading
+2026-03-24 18:21:45 - INFO -  * Restarting with stat
+2026-03-24 18:21:45 - WARNING -  * Debugger is active!
+2026-03-24 18:21:45 - INFO -  * Debugger PIN: 133-917-514
+2026-03-24 18:21:52 - INFO - Request: POST /register - IP: 127.0.0.1
+2026-03-24 18:21:52 - INFO - 127.0.0.1 - - [24/Mar/2026 18:21:52] "POST /register HTTP/1.1" 200 -
+2026-03-24 18:24:21 - INFO -  * Detected change in '/Users/mbonuchinedum/Documents/Projects/SatelliteImageThreatDetectionSystem/backend/Database/registerDb.py', reloading
+2026-03-24 18:24:21 - INFO -  * Restarting with stat
+2026-03-24 18:24:21 - WARNING -  * Debugger is active!
+2026-03-24 18:24:21 - INFO -  * Debugger PIN: 133-917-514
+2026-03-24 18:29:59 - INFO -  * Detected change in '/Users/mbonuchinedum/Documents/Projects/SatelliteImageThreatDetectionSystem/backend/Database/registerDb.py', reloading
+2026-03-24 18:29:59 - INFO -  * Restarting with stat
+2026-03-24 18:29:59 - WARNING -  * Debugger is active!
+2026-03-24 18:29:59 - INFO -  * Debugger PIN: 133-917-514
+2026-03-24 18:31:08 - INFO - Request: POST /register - IP: 127.0.0.1
+2026-03-24 18:31:08 - INFO - 127.0.0.1 - - [24/Mar/2026 18:31:08] "POST /register HTTP/1.1" 200 -
+2026-03-24 18:31:32 - INFO - Request: POST /register - IP: 127.0.0.1
+2026-03-24 18:31:33 - INFO - 127.0.0.1 - - [24/Mar/2026 18:31:33] "POST /register HTTP/1.1" 200 -
+2026-03-24 18:31:36 - INFO - Request: POST /register - IP: 127.0.0.1
+2026-03-24 18:31:36 - INFO - 127.0.0.1 - - [24/Mar/2026 18:31:36] "POST /register HTTP/1.1" 200 -
+2026-03-24 18:31:39 - INFO - Request: POST /register - IP: 127.0.0.1
+2026-03-24 18:31:39 - INFO - 127.0.0.1 - - [24/Mar/2026 18:31:39] "POST /register HTTP/1.1" 200 -
+2026-03-24 18:31:45 - INFO - Request: POST /register - IP: 127.0.0.1
+2026-03-24 18:31:45 - INFO - 127.0.0.1 - - [24/Mar/2026 18:31:45] "POST /register HTTP/1.1" 200 -
+2026-03-24 18:31:49 - INFO - Request: POST /register - IP: 127.0.0.1
+2026-03-24 18:31:49 - INFO - 127.0.0.1 - - [24/Mar/2026 18:31:49] "POST /register HTTP/1.1" 200 -

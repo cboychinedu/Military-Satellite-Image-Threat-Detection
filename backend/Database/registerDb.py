@@ -127,14 +127,15 @@ class RegisterDatabase:
         clearanceData = self.decryptClearanceCode(clearanceCode)
         
         # Checking if the clearance data was decrypted 
-        if (clearanceData["status"] == "success"): 
-            print(clearanceData)
-            return;  
-        
+        if (clearanceData["status"] == "success"):
+            # Getting the clearance level and number 
+            clearanceLevel = clearanceData["clearanceData"]["level"]
+            clearanceLevelNumber = clearanceData["clearanceData"]["number"] 
         
             # Creating the sql statement 
             sqlStatement = """
-                INSERT INTO users (fullname, email, password) VALUES (%s, %s, %s); 
+                INSERT INTO users (fullname, email, password, clearanceLevel, clearanceLevelNumber) 
+                VALUES (%s, %s, %s, %s, %s); 
             """
 
             # Using the try except block to save the user's data into the database 
@@ -142,7 +143,7 @@ class RegisterDatabase:
                 # Check if the cursor is active(connected) 
                 if self.db.cursor: 
                     # if the database if connected, execute the block of code below 
-                    self.db.cursor.execute(sqlStatement, (fullname, email, password))
+                    self.db.cursor.execute(sqlStatement, (fullname, email, password, clearanceLevel, clearanceLevelNumber))
 
                     # Commit the changes to save the data 
                     self.db.conn.commit() 
@@ -190,6 +191,18 @@ class RegisterDatabase:
                 # Returning the error message 
                 return databaseResponse
 
+        # Else if the clearance data status was not successful 
+        else: 
+            # Execute the block of code below if the clearance code was not decrypted 
+            # Create the error message 
+            databaseResponse = {
+                "connection": False, 
+                "status": "error", 
+                "message": "Invalid clearance access code."
+            }
+            
+            # Returning the error message 
+            return databaseResponse
 
     
 
