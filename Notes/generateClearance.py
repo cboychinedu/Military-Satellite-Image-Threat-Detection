@@ -67,8 +67,8 @@ def decryptNewUser(encryptedData):
         
 # Setting the clearance data 
 clearanceData = {
-    "level": "SECRET", 
-    "number": 3
+    "level": "TOP SECRET", 
+    "number": clearanceLevel["TOP SECRET"]
 }
 
 # Getting the result

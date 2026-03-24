@@ -95,14 +95,8 @@ const Login = () => {
                     // Save the token insdie the cookie 
                     Cookies.set('x-auth-token', responseData.token, { expires: 1 }); 
 
-                    // Auto hide, and redirect the user to the dashboard page 
-                    setTimeout(() => {
-                        // Hide the message 
-                        setShowAlert(false); 
-
-                        // Navigate the user to the dashboard page 
-                        window.location.href = "/dashboard"; 
-                    }, 5000); 
+                    // Navigating to the dashboard 
+                    window.location.href = "/dashboard"; 
                 }
 
                 // Else if the response data was an error 
@@ -143,7 +137,7 @@ const Login = () => {
             )}
 
             {/* Adding the main div */}
-            <main className="flex-grow flex items-center justify-center px-6 py-12">
+            <main className="flex-grow flex items-center justify-center px-6 py-12 mb-[60px]">
                 <section className="w-full max-w-md bg-mil-gray border border-mil-border rounded-xl shadow-2xl p-8 space-y-8">
                     {/* Adding the Header Section  */}
                     <div className="text-center space-y-4">

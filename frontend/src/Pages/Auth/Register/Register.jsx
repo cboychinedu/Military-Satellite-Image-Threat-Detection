@@ -193,7 +193,7 @@ const Register = () => {
             )}
 
             {/* Adding the main div */}
-            <main className="flex-grow flex items-center justify-center px-6 py-12">
+            <main className="flex-grow flex items-center justify-center px-6 py-12 mb-[60px]">
                 <section className="w-full max-w-md bg-mil-gray border border-mil-border rounded-xl shadow-2xl p-8 space-y-8">
                     {/* Adding the Header Section */}
                     <div className="text-center space-y-4">
@@ -267,6 +267,8 @@ const Register = () => {
                             {/* Password */}
                             <div> 
                                 <label className="block text-xs font-semibold text-mil-blue-light uppercase mb-1">Password</label>
+                                <p className="text-[12px] mt-[10px] mr-[34px] mb-[12px] ml-[1px] text-[#bfdbfe70]"> Password must contain a capital letter, and 
+                                    must be at least more than 3 characters long.</p>
                                 <input 
                                     type="password"
                                     name="password"

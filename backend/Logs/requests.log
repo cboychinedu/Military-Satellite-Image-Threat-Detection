@@ -106,3 +106,81 @@
 2026-03-24 18:31:45 - INFO - 127.0.0.1 - - [24/Mar/2026 18:31:45] "POST /register HTTP/1.1" 200 -
 2026-03-24 18:31:49 - INFO - Request: POST /register - IP: 127.0.0.1
 2026-03-24 18:31:49 - INFO - 127.0.0.1 - - [24/Mar/2026 18:31:49] "POST /register HTTP/1.1" 200 -
+2026-03-24 18:59:50 - INFO - Request: OPTIONS /register - IP: 127.0.0.1
+2026-03-24 18:59:50 - INFO - 127.0.0.1 - - [24/Mar/2026 18:59:50] "OPTIONS /register HTTP/1.1" 200 -
+2026-03-24 18:59:50 - INFO - Request: POST /register - IP: 127.0.0.1
+2026-03-24 18:59:50 - INFO - 127.0.0.1 - - [24/Mar/2026 18:59:50] "POST /register HTTP/1.1" 200 -
+2026-03-24 19:00:15 - INFO - Request: OPTIONS /register - IP: 127.0.0.1
+2026-03-24 19:00:15 - INFO - 127.0.0.1 - - [24/Mar/2026 19:00:15] "OPTIONS /register HTTP/1.1" 200 -
+2026-03-24 19:00:15 - INFO - Request: POST /register - IP: 127.0.0.1
+2026-03-24 19:00:16 - INFO - 127.0.0.1 - - [24/Mar/2026 19:00:16] "POST /register HTTP/1.1" 200 -
+2026-03-24 19:13:25 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3001
+ * Running on http://172.20.10.2:3001
+2026-03-24 19:13:25 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-24 19:13:25 - INFO -  * Restarting with stat
+2026-03-24 19:13:26 - WARNING -  * Debugger is active!
+2026-03-24 19:13:26 - INFO -  * Debugger PIN: 489-871-038
+2026-03-24 19:14:14 - INFO - Request: OPTIONS /register - IP: 127.0.0.1
+2026-03-24 19:14:14 - INFO - 127.0.0.1 - - [24/Mar/2026 19:14:14] "OPTIONS /register HTTP/1.1" 200 -
+2026-03-24 19:14:14 - INFO - Request: POST /register - IP: 127.0.0.1
+2026-03-24 19:14:14 - INFO - 127.0.0.1 - - [24/Mar/2026 19:14:14] "POST /register HTTP/1.1" 200 -
+2026-03-24 19:17:28 - INFO - Request: OPTIONS /register - IP: 127.0.0.1
+2026-03-24 19:17:28 - INFO - 127.0.0.1 - - [24/Mar/2026 19:17:28] "OPTIONS /register HTTP/1.1" 200 -
+2026-03-24 19:17:28 - INFO - Request: POST /register - IP: 127.0.0.1
+2026-03-24 19:17:29 - INFO - 127.0.0.1 - - [24/Mar/2026 19:17:29] "POST /register HTTP/1.1" 200 -
+2026-03-24 19:21:45 - INFO - Request: OPTIONS /login - IP: 127.0.0.1
+2026-03-24 19:21:45 - INFO - 127.0.0.1 - - [24/Mar/2026 19:21:45] "OPTIONS /login HTTP/1.1" 200 -
+2026-03-24 19:21:45 - INFO - Request: POST /login - IP: 127.0.0.1
+2026-03-24 19:21:46 - INFO - 127.0.0.1 - - [24/Mar/2026 19:21:46] "POST /login HTTP/1.1" 200 -
+2026-03-24 19:21:59 - INFO - Request: OPTIONS /login - IP: 127.0.0.1
+2026-03-24 19:21:59 - INFO - 127.0.0.1 - - [24/Mar/2026 19:21:59] "OPTIONS /login HTTP/1.1" 200 -
+2026-03-24 19:21:59 - INFO - Request: POST /login - IP: 127.0.0.1
+2026-03-24 19:22:00 - INFO - 127.0.0.1 - - [24/Mar/2026 19:22:00] "POST /login HTTP/1.1" 200 -
+2026-03-24 20:13:24 - INFO - Request: OPTIONS /login - IP: 127.0.0.1
+2026-03-24 20:13:24 - INFO - 127.0.0.1 - - [24/Mar/2026 20:13:24] "OPTIONS /login HTTP/1.1" 200 -
+2026-03-24 20:13:24 - INFO - Request: POST /login - IP: 127.0.0.1
+2026-03-24 20:13:25 - INFO - 127.0.0.1 - - [24/Mar/2026 20:13:25] "POST /login HTTP/1.1" 200 -
+2026-03-24 20:13:34 - INFO - Request: OPTIONS /login - IP: 127.0.0.1
+2026-03-24 20:13:34 - INFO - 127.0.0.1 - - [24/Mar/2026 20:13:34] "OPTIONS /login HTTP/1.1" 200 -
+2026-03-24 20:13:34 - INFO - Request: POST /login - IP: 127.0.0.1
+2026-03-24 20:13:34 - INFO - 127.0.0.1 - - [24/Mar/2026 20:13:34] "POST /login HTTP/1.1" 200 -
+2026-03-24 20:13:49 - INFO - Request: OPTIONS /login - IP: 127.0.0.1
+2026-03-24 20:13:49 - INFO - 127.0.0.1 - - [24/Mar/2026 20:13:49] "OPTIONS /login HTTP/1.1" 200 -
+2026-03-24 20:13:49 - INFO - Request: POST /login - IP: 127.0.0.1
+2026-03-24 20:13:49 - INFO - 127.0.0.1 - - [24/Mar/2026 20:13:49] "POST /login HTTP/1.1" 200 -
+2026-03-24 20:14:23 - INFO - Request: OPTIONS /login - IP: 127.0.0.1
+2026-03-24 20:14:23 - INFO - 127.0.0.1 - - [24/Mar/2026 20:14:23] "OPTIONS /login HTTP/1.1" 200 -
+2026-03-24 20:14:23 - INFO - Request: POST /login - IP: 127.0.0.1
+2026-03-24 20:14:23 - INFO - 127.0.0.1 - - [24/Mar/2026 20:14:23] "POST /login HTTP/1.1" 200 -
+2026-03-24 20:14:32 - INFO - Request: OPTIONS /login - IP: 127.0.0.1
+2026-03-24 20:14:32 - INFO - 127.0.0.1 - - [24/Mar/2026 20:14:32] "OPTIONS /login HTTP/1.1" 200 -
+2026-03-24 20:14:32 - INFO - Request: POST /login - IP: 127.0.0.1
+2026-03-24 20:14:33 - INFO - 127.0.0.1 - - [24/Mar/2026 20:14:33] "POST /login HTTP/1.1" 200 -
+2026-03-24 20:14:47 - INFO - Request: OPTIONS /login - IP: 127.0.0.1
+2026-03-24 20:14:47 - INFO - 127.0.0.1 - - [24/Mar/2026 20:14:47] "OPTIONS /login HTTP/1.1" 200 -
+2026-03-24 20:14:47 - INFO - Request: POST /login - IP: 127.0.0.1
+2026-03-24 20:14:48 - INFO - 127.0.0.1 - - [24/Mar/2026 20:14:48] "POST /login HTTP/1.1" 200 -
+2026-03-24 20:17:45 - INFO - Request: OPTIONS /login - IP: 127.0.0.1
+2026-03-24 20:17:45 - INFO - 127.0.0.1 - - [24/Mar/2026 20:17:45] "OPTIONS /login HTTP/1.1" 200 -
+2026-03-24 20:17:45 - INFO - Request: POST /login - IP: 127.0.0.1
+2026-03-24 20:17:45 - INFO - 127.0.0.1 - - [24/Mar/2026 20:17:45] "POST /login HTTP/1.1" 200 -
+2026-03-24 20:19:53 - INFO - Request: OPTIONS /login - IP: 127.0.0.1
+2026-03-24 20:19:53 - INFO - 127.0.0.1 - - [24/Mar/2026 20:19:53] "OPTIONS /login HTTP/1.1" 200 -
+2026-03-24 20:19:53 - INFO - Request: POST /login - IP: 127.0.0.1
+2026-03-24 20:19:53 - INFO - 127.0.0.1 - - [24/Mar/2026 20:19:53] "POST /login HTTP/1.1" 200 -
+2026-03-24 20:19:59 - INFO - Request: OPTIONS /login - IP: 127.0.0.1
+2026-03-24 20:19:59 - INFO - 127.0.0.1 - - [24/Mar/2026 20:19:59] "OPTIONS /login HTTP/1.1" 200 -
+2026-03-24 20:19:59 - INFO - Request: POST /login - IP: 127.0.0.1
+2026-03-24 20:19:59 - INFO - 127.0.0.1 - - [24/Mar/2026 20:19:59] "POST /login HTTP/1.1" 200 -
+2026-03-24 20:20:02 - INFO - Request: POST /login - IP: 127.0.0.1
+2026-03-24 20:20:02 - INFO - 127.0.0.1 - - [24/Mar/2026 20:20:02] "POST /login HTTP/1.1" 200 -
+2026-03-24 20:20:11 - INFO - Request: OPTIONS /login - IP: 127.0.0.1
+2026-03-24 20:20:11 - INFO - 127.0.0.1 - - [24/Mar/2026 20:20:11] "OPTIONS /login HTTP/1.1" 200 -
+2026-03-24 20:20:11 - INFO - Request: POST /login - IP: 127.0.0.1
+2026-03-24 20:20:11 - INFO - 127.0.0.1 - - [24/Mar/2026 20:20:11] "POST /login HTTP/1.1" 200 -
+2026-03-24 20:29:43 - INFO - Request: OPTIONS /login - IP: 127.0.0.1
+2026-03-24 20:29:43 - INFO - 127.0.0.1 - - [24/Mar/2026 20:29:43] "OPTIONS /login HTTP/1.1" 200 -
+2026-03-24 20:29:43 - INFO - Request: POST /login - IP: 127.0.0.1
+2026-03-24 20:29:44 - INFO - 127.0.0.1 - - [24/Mar/2026 20:29:44] "POST /login HTTP/1.1" 200 -
