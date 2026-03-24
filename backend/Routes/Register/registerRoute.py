@@ -54,7 +54,8 @@ def registerPage():
         responseMessage = registerUserDb.insertNewUser(
             fullname=fullname, 
             email=email, 
-            password=passwordHash
+            password=passwordHash, 
+            clearanceCode=clearanceCode
         )
 
         # Returning the response message 

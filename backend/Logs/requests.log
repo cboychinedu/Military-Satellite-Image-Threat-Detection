@@ -42,3 +42,21 @@
 2026-03-16 18:23:16 - INFO -  * Restarting with stat
 2026-03-16 18:23:16 - WARNING -  * Debugger is active!
 2026-03-16 18:23:16 - INFO -  * Debugger PIN: 489-871-038
+2026-03-24 17:01:49 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3001
+ * Running on http://127.0.0.1:3001
+2026-03-24 17:01:49 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-24 17:01:49 - INFO -  * Restarting with stat
+2026-03-24 17:01:49 - WARNING -  * Debugger is active!
+2026-03-24 17:01:49 - INFO -  * Debugger PIN: 133-917-514
+2026-03-24 17:03:48 - INFO - Request: POST /register - IP: 127.0.0.1
+2026-03-24 17:03:48 - INFO - 127.0.0.1 - - [24/Mar/2026 17:03:48] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2026-03-24 17:04:46 - INFO -  * Detected change in '/Users/mbonuchinedum/Documents/Projects/SatelliteImageThreatDetectionSystem/backend/Database/registerDb.py', reloading
+2026-03-24 17:04:46 - INFO -  * Restarting with stat
+2026-03-24 17:04:46 - WARNING -  * Debugger is active!
+2026-03-24 17:04:46 - INFO -  * Debugger PIN: 133-917-514
+2026-03-24 17:04:50 - INFO - Request: POST /register - IP: 127.0.0.1
+2026-03-24 17:04:50 - INFO - 127.0.0.1 - - [24/Mar/2026 17:04:50] "POST /register HTTP/1.1" 200 -
+2026-03-24 17:05:49 - INFO - Request: POST /register - IP: 127.0.0.1
+2026-03-24 17:05:49 - INFO - 127.0.0.1 - - [24/Mar/2026 17:05:49] "POST /register HTTP/1.1" 200 -

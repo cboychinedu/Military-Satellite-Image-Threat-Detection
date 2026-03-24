@@ -1,9 +1,50 @@
+# Importing the necessary modules 
+import os 
+import json
+from cryptography.fernet import Fernet 
+
+# Getting the encryption key
+# encryptionKey = bytes(os.getenv("ENCRYPTION_KEY"))
+
 # Creating the register database class 
 class RegisterDatabase: 
     # Init method to load the db object 
     def __init__(self, db):
         # Load the database object 
         self.db = db 
+        self.encryptionKey = bytes(os.getenv("ENCRYPTION_KEY").encode())
+        self.cipherSuite = Fernet(self.encryptionKey)
+        
+    # Creating a method for decrypting the clearance code data 
+    def decryptClearanceCode(self, clearanceCode): 
+        # Decrypt the incoming data by using try except block 
+        try:
+            # Decrypt the clearance code  
+            decryptedBytes = self.cipherSuite.decrypt(clearanceCode.encode())
+            clearanceData = json.loads(decryptedBytes.decode())
+        
+            # Building the clearance response data 
+            clearanceResponseData = {
+                "status": "success", 
+                "clearanceData": clearanceData, 
+                "message": "|Clearance data decrypted."
+            }
+            
+            # Returning the results 
+            return clearanceResponseData; 
+        
+        # Except there was an error decrypting the clearance code 
+        # Execut this block of code 
+        except Exception as error: 
+            # Create the error message 
+            clearanceResponseData = {
+                "status": "error", 
+                "message": str(error), 
+                "clearanceData": None 
+            }
+            
+            # Returning the clearance response data 
+            return clearanceResponseData; 
 
     # Creating a method to get data from the database to check if the 
     # user is registered 
@@ -81,64 +122,73 @@ class RegisterDatabase:
             return databaseResponse 
         
     # Creating a method to insert a user into the database 
-    def insertNewUser(self, fullname, email, password): 
-        # Creating the sql statement 
-        sqlStatement = """
-            INSERT INTO users (fullname, email, password) VALUES (%s, %s, %s); 
-        """
+    def insertNewUser(self, fullname, email, password, clearanceCode): 
+        # Validating the clearance code 
+        clearanceData = self.decryptClearanceCode(clearanceCode)
+        
+        # Checking if the clearance data was decrypted 
+        if (clearanceData["status"] == "success"): 
+            print(clearanceData)
+            return;  
+        
+        
+            # Creating the sql statement 
+            sqlStatement = """
+                INSERT INTO users (fullname, email, password) VALUES (%s, %s, %s); 
+            """
 
-        # Using the try except block to save the user's data into the database 
-        try: 
-            # Check if the cursor is active(connected) 
-            if self.db.cursor: 
-                # if the database if connected, execute the block of code below 
-                self.db.cursor.execute(sqlStatement, (fullname, email, password))
+            # Using the try except block to save the user's data into the database 
+            try: 
+                # Check if the cursor is active(connected) 
+                if self.db.cursor: 
+                    # if the database if connected, execute the block of code below 
+                    self.db.cursor.execute(sqlStatement, (fullname, email, password))
 
-                # Commit the changes to save the data 
-                self.db.conn.commit() 
+                    # Commit the changes to save the data 
+                    self.db.conn.commit() 
 
-                # Create an object response 
-                databaseResponse = {
-                    "connection": True, 
-                    "status": "success", 
-                    "message": "User registered!"
-                }
+                    # Create an object response 
+                    databaseResponse = {
+                        "connection": True, 
+                        "status": "success", 
+                        "message": "User registered!"
+                    }
 
-                # Returning the database response 
-                return databaseResponse
+                    # Returning the database response 
+                    return databaseResponse
+                
+                # Else if the cursor is not connected, execute this block 
+                # of code below 
+                else: 
+                    # Create an object response 
+                    databaseResponse = {
+                        "connection": False, 
+                        "status": "error", 
+                        "message": "Database not connected!"
+                    }
+
+                    # Returning the database error response 
+                    return databaseResponse 
             
-            # Else if the cursor is not connected, execute this block 
-            # of code below 
-            else: 
-                # Create an object response 
+            # On error generated, execute this block of code below 
+            except Exception as error:
+                # Display the error 
+                print(f"[Error]: {error}")
+
+                # Rollback in case of an error, to keep the database 
+                # in a consistent state 
+                if self.db.conn: 
+                    self.db.conn.rollback() 
+
+                # Returning an error message 
                 databaseResponse = {
                     "connection": False, 
                     "status": "error", 
-                    "message": "Database not connected!"
-                }
+                    "message": str(error)
+                } 
 
-                # Returning the database error response 
-                return databaseResponse 
-        
-        # On error generated, execute this block of code below 
-        except Exception as error:
-            # Display the error 
-            print(f"[Error]: {error}")
-
-            # Rollback in case of an error, to keep the database 
-            # in a consistent state 
-            if self.db.conn: 
-                self.db.conn.rollback() 
-
-            # Returning an error message 
-            databaseResponse = {
-                "connection": False, 
-                "status": "error", 
-                "message": str(error)
-            } 
-
-            # Returning the error message 
-            return databaseResponse
+                # Returning the error message 
+                return databaseResponse
 
 
     
